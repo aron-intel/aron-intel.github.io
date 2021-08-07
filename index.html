@@ -167,6 +167,8 @@
 
 					</div>
 
+
+
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
@@ -215,7 +217,8 @@
 							</section>
 						</section>
 					</footer>
-
+						<div id="b-placeholder"></div>
+						<include src="assets/navbar.html">Loading...</include>
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul><li>&copy; ARON</li><li>Design: <a href="https://aronhacks.github.io">&copy; ARON</a></li></ul>
@@ -224,6 +227,11 @@
 			</div>
 
 		<!-- Scripts -->
+			<script>
+                         $(function(){
+                         $("#b-placeholder").load("aron-intel.github.io/assets/navbar.html");
+                       });
+                       </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
